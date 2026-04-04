@@ -1,0 +1,280 @@
+.contact-page .contact-hero {
+	background: #3c7e3ccc;
+	background-image: url(./assets/images/back.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height: 530px;
+	overflow: hidden;
+	color: #fff;
+	position: relative;
+}
+
+.contact-page .contact-hero-content {
+	margin: 96px 0 150px;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: 60px;
+}
+
+.contact-page .contact-hero h1 {
+	/* margin: 110px 0 0 140px; */
+	display: flex;
+	flex-basis: 50%;
+	justify-content: center;
+	align-self: center;
+	margin: 0;
+	font-size: 72px;
+}
+
+.contact-list {
+	margin: 84px 60px 0 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 28px;
+}
+
+.contact-list li {
+	display: flex;
+	align-items: center;
+	gap: 18px;
+}
+
+.contact-icon {
+	width: 42px;
+	height: 42px;
+	border-radius: 50%;
+	background: #f2f2f2;
+	color: #6e9870;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 1;
+}
+
+.contact-list a,
+.contact-list address {
+	color: #fff;
+	text-decoration: none;
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 1.2;
+	font-style: normal;
+}
+
+
+.consult-section {
+	background: #4a4a4d;
+	background-image: url(./assets/images/petux.png);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	background-size: 20%;
+	padding: 58px 0 0;
+	overflow: hidden;
+
+}
+
+.consult-wrap {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+.consult-left {
+	width: min(100%, 760px);
+	margin: 0 auto;
+	text-align: center;
+}
+
+.consult-left h2 {
+	margin: 0;
+	color: #f1f1f1;
+	font-size: 50px;
+	line-height: 1.15;
+	font-weight: 700;
+}
+
+.consult-left p {
+	margin: 12px 0 48px;
+	color: #f2b58d;
+	font-size: 30px;
+	line-height: 1.2;
+	font-weight: 700;
+}
+
+.consult-form {
+	width: min(100%, 740px);
+	margin: 0 auto;
+}
+
+.consult-form label {
+	display: block;
+	margin-bottom: 24px;
+}
+
+.consult-form input,
+.consult-form textarea {
+	width: 100%;
+	border: 0;
+	border-bottom: 2px solid #7b7b7d;
+	background: transparent;
+	color: #fff;
+	font-family: inherit;
+	font-size: 33px;
+	font-weight: 500;
+	padding: 14px 0;
+	outline: none;
+}
+
+.consult-form textarea {
+	min-height: 68px;
+	resize: vertical;
+}
+
+.consult-form input::placeholder,
+.consult-form textarea::placeholder {
+	color: #8f8f93;
+}
+
+.consult-form button {
+	margin: 22px auto 70px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 430px;
+	height: 58px;
+	border: 0;
+	border-radius: 999px;
+	background: #e98549;
+	color: #fff;
+	font-family: inherit;
+	font-size: 19px;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.consult-right {
+	width: 33%;
+	min-height: 500px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
+}
+
+.rooster-placeholder {
+	width: 360px;
+	height: 420px;
+	border: 2px solid #8e8f95;
+	border-radius: 42% 58% 40% 60% / 48% 42% 58% 52%;
+	color: #8e8f95;
+	font-size: 28px;
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transform: translate(65px, 40px);
+}
+
+@media (max-width: 1440px) {
+	.contact-page .contact-hero h1 {
+		font-size: 60px;
+		margin-left: 100px;
+	}
+
+	.contact-list {
+		margin-top: 96px;
+		margin-right: 20px;
+		gap: 20px;
+	}
+
+	.contact-icon {
+		width: 34px;
+		height: 34px;
+		font-size: 18px;
+	}
+
+	.contact-list a,
+	.contact-list address {
+		font-size: 28px;
+	}
+
+	.consult-section {
+		background-size: 30%;
+	}
+
+	.consult-left h2 {
+		font-size: 48px;
+	}
+
+	.consult-left p {
+		font-size: 30px;
+	}
+
+	.consult-form input,
+	.consult-form textarea {
+		font-size: 24px;
+	}
+
+	.consult-form button {
+		width: 330px;
+		height: 50px;
+		font-size: 15px;
+	}
+}
+
+@media (max-width: 1020px) {
+	.contact-page .contact-hero {
+		min-height: 520px;
+	}
+
+	.contact-page .contact-hero-content {
+		margin-top: 20px;
+		flex-direction: column;
+		gap: 24px;
+	}
+
+	.contact-page .contact-hero h1 {
+		margin: 30px 0 0;
+		font-size: 56px;
+	}
+
+	.contact-list {
+		margin: 20px auto;
+	}
+
+	.contact-list a,
+	.contact-list address {
+		font-size: 24px;
+	}
+
+	.consult-section {
+		background-size: 40%;
+	}
+
+	.consult-wrap {
+		flex-direction: column;
+	}
+
+	.consult-left {
+		width: 100%;
+	}
+
+	.consult-right {
+		width: 100%;
+		min-height: 220px;
+		justify-content: center;
+	}
+
+	.rooster-placeholder {
+		transform: none;
+		width: 280px;
+		height: 180px;
+		border-radius: 18px;
+		margin-bottom: 28px;
+	}
+}
