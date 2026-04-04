@@ -1,0 +1,231 @@
+.about-hero {
+	background: linear-gradient(rgba(121, 168, 118, 0.92), rgba(121, 168, 118, 0.92)), url("./assets/images/back.png") center/cover no-repeat;
+	min-height: 430px;
+}
+
+.about-hero-text {
+	max-width: 980px;
+	padding: 50px 0 80px;
+	color: #fff;
+}
+
+.about-hero-text h1 {
+	margin: 0 0 18px;
+	font-size: 62px;
+}
+
+.about-hero-text p {
+	margin: 0;
+	font-size: 20px;
+	line-height: 1.45;
+}
+
+.about-main {
+	background: #f4f3f1;
+	background-image: url(./assets/images/cow.png);
+	background-position: right -0 top 90px;
+	background-repeat: no-repeat;
+}
+
+.about-section,
+.about-team {
+	padding: 56px 0;
+}
+
+.about-main h2 {
+	margin: 0 0 22px;
+	color: #e67d39;
+	font-size: 52px;
+}
+
+.history-wrap {
+	display: flex;
+	gap: 20px;
+	align-items: flex-start;
+}
+
+.history-list {
+	flex: 1 1 auto;
+	position: relative;
+	padding-left: 34px;
+}
+
+.history-list::before {
+	content: "";
+	position: absolute;
+	left: 12px;
+	top: 30px;
+	bottom: 115px;
+	width: 2px;
+	background: #7c9f78;
+	border-radius: 3px;
+}
+
+.history-item {
+	margin-bottom: 24px;
+	position: relative;
+}
+
+.history-item::before {
+	content: "";
+	position: absolute;
+	left: -43px;
+	top: 2px;
+	width: 24px;
+	height: 40px;
+	background: url("./assets/images/tea.png") center/contain no-repeat;
+}
+
+.history-item h3 {
+	margin: 0 0 6px;
+	color: #5e8f5d;
+	font-size: 44px;
+}
+
+.history-item p {
+	margin: 0;
+	color: #505050;
+	font-size: 19px;
+	line-height: 1.4;
+}
+
+.history-art {
+	flex: 0 0 280px;
+	height: 340px;
+	border: 2px dashed #d6c8c2;
+	border-radius: 20px;
+	color: #c7b8b2;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 700;
+}
+
+.team-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 42px 22px;
+	align-items: flex-start;
+}
+
+.team-card {
+	width: calc(33.333% - 15px);
+	min-width: 260px;
+	background: transparent;
+	border-radius: 0;
+	padding: 0;
+	text-align: center;
+	position: relative;
+}
+
+.avatar {
+	width: 172px;
+	height: 172px;
+	border-radius: 50%;
+	background: #d9d9d9;
+	border: 1px solid #d7d7d7;
+	margin: 0 auto;
+	position: relative;
+	z-index: 2;
+}
+
+.team-info {
+	background: #fff;
+	border-radius: 40px;
+	box-shadow: 0 8px 18px rgba(25, 28, 31, 0.16);
+	padding: 12px 16px 14px;
+	margin: -20px auto 0;
+	width: min(100%, 265px);
+	text-align: left;
+	position: relative;
+	z-index: 2;
+}
+
+.team-card h4 {
+	margin: 0 0 4px;
+	color: #e67d39;
+	font-size: 15px;
+	line-height: 1.2;
+}
+
+.team-card p {
+	margin: 0;
+	color: #7a7a7a;
+	font-size: 13px;
+	line-height: 1.25;
+}
+
+.team-info span {
+	display: block;
+	font-size: 13px;
+	/* width: 62px;
+	height: 1px; */
+	/* background: #d4d4d4; */
+	/* margin: 4px 0 7px; */
+}
+
+@media (max-width: 1020px) {
+	.history-wrap {
+		flex-direction: column;
+	}
+
+	.about-main {
+		background-size: 50%;
+		background-position: right -0 top 250px;
+	}
+
+	.history-art {
+		width: 100%;
+		flex: 0 0 auto;
+		height: 180px;
+	}
+
+	.team-card {
+		width: calc(50% - 11px);
+	}
+
+	.history-list {
+		padding-left: 26px;
+	}
+
+	.history-list::before {
+		left: 10px;
+		bottom: 152px;
+	}
+
+	.history-item::before {
+				left: -33px;
+				width: 21px;
+				height: 32px;
+
+	}
+
+	.avatar {
+		width: 200px;
+		height: 200px;
+	}
+
+	.team-info {
+		width: min(100%, 245px);
+	}
+
+	.team-info h4{
+		font-size: 22px;
+	}
+	.team-info span, p {
+		margin: 8px 0;
+		font: 17px;
+	}
+}
+
+@media (max-width: 720px) {
+	.team-list {
+		gap: 26px;
+	}
+
+	.team-card {
+		width: 100%;
+		max-width: 320px;
+		margin: 0 auto;
+	}
+}
