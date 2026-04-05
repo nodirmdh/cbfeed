@@ -21,6 +21,7 @@ html,
 body {
 	margin: 0;
 	padding: 0;
+	overflow-x: hidden;
 }
 
 body {
@@ -2493,13 +2494,11 @@ body {
 	}
 
 	.logo {
-		overflow: hidden;
+		overflow: visible;
 	}
 
 	.logo img {
 		width: 86px;
-		/* trims right edge artifact on mobile logo raster */
-		clip-path: inset(0 8px 0 0);
 	}
 
 	.menu {
