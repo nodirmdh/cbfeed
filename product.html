@@ -1,25 +1,34 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Продукты | CBFeed</title>
+  <title>Продукт | CBFeed</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="product.css">
 </head>
-<body>
+
+<body class="product-page">
   <div class="page">
     <header class="hero product-hero">
       <div class="container">
         <div class="topbar">
-          <a class="logo" href="home.html"><img src="assets/images/logo/logo.png" alt="CBFeed logo"></a>
+          <a class="logo" href="index.html"><img src="assets/logo-white.svg" alt="CBFeed logo"></a>
           <input type="checkbox" id="nav-toggle" class="nav-toggle">
-          <label for="nav-toggle" class="burger" aria-label="Открыть меню"><span></span><span></span><span></span></label>
-          <nav class="menu" aria-label="Главное меню">
-            <a href="home.html">ГЛАВНАЯ</a><a href="about.html">О НАС</a><a href="product.html">ПРОДУКТЫ</a><a href="investors.html">ИНВЕСТОРАМ</a><a href="#">КАРЬЕРА</a><a href="media.html">МЕДИА</a><a class="menu-contact" href="contact.html">КОНТАКТЫ</a>
+          <label for="nav-toggle" class="burger"
+            aria-label="РћС‚РєСЂС‹С‚СЊ РјРµРЅСЋ"><span></span><span></span><span></span></label>
+          <nav class="menu" aria-label="Р“Р»Р°РІРЅРѕРµ РјРµРЅСЋ">
+            <a href="index.html">ГЛАВНАЯ </a>
+            <a href="about.html">О НАС</a>
+            <a href="product-list.html">ПРОДУКТЫ</a>
+            <a href="investors.html">ИНВЕСТОРАМ</a>
+            <a href="#">КАРЬЕРА</a>
+            <a href="media.html">МЕДИА</a>
+            <a class="menu-contact" href="contact.html">КОНТАКТЫ</a>
           </nav>
           <div class="langs"><a class="current" href="#">RU</a><a href="#">UZ</a><a href="#">EN</a></div>
         </div>
@@ -30,57 +39,95 @@
     <main class="product-main">
       <section class="product-intro">
         <div class="container">
-          <img src="./assets/images/icons/Biotech.png" alt="">
+          <img src="./assets/Biotech.svg" alt="">
           <h2>Биотехнологические решения для повышения эффективности кормления и устойчивого сельского хозяйства</h2>
-          <p>Продукты CBFeed охватывают разные задачи — от повышения кормовой эффективности    в промышленном животноводстве до пилотных решений в области концентрированных биомасс и биологических удобрений.</p>
-          <div class="tabs"><button>КОММЕРЧЕСКИЕ ПРОДУКТЫ</button><button>ПИЛОТНЫЕ И R&D-РЕШЕНИЯ</button></div>
+          <p>Продукты CBFeed охватывают разные задачи — от повышения кормовой эффективности в промышленном
+            животноводстве до пилотных решений в области концентрированных биомасс и биологических удобрений.</p>
+          <div class="tabs"><button class="active">коммерческие продукты</button><button>пилотные и R&D-решения</button></div>
           <div class="product-card">
-            <div class="product-photo">ФОТО ПРОДУКТА</div>
+            <img class="product-photo" src="./assets/background-home.svg" alt="Фото продукта">
             <div class="product-text">
-              <h3>CBFeed
-Bio Mass</h3>
-              <p>Концентрированная биомасса 
-для кормовых и технологических применений.</p>
-              <!-- <a href="#">ОФОРМИТЬ ЗАКАЗ</a> -->
+              <h3>Кормовая добавка CBFeed</h3>
+              <p>Биотехнологическая кормовая добавка
+                для повышения продуктивности и снижения затрат на корм.</p>
+              <a class="order-btn" href="#">ОФОРМИТЬ ЗАКАЗ</a>
             </div>
           </div>
           <h4>Описание продукта</h4>
-          <p class="small">CBFeed Bio Mass — пилотный продукт, представляющий собой более концентрированную биомассу на основе технологии CBFeed Forte. Рассматривается для специализированных кормовых решений и дальнейших R&D-направлений.</p>
+          <p class="small">CBFeed — кормовая добавка на основе биотехнологической переработки растительного сырья с
+            использованием микроорганизмов. Применяется в рационах птицы и сельскохозяйственных животных для улучшения
+            усвояемости корма, повышения привесов и снижения кормозатрат.</p>
           <h4>Ключевые особенности</h4>
-          <ul><li>Повышение продуктивности</li><li>Оптимизация затрат</li><li>Поддержка биобезопасности</li></ul>
+          <ul>
+            <li>Подходит для промышленного животноводства</li>
+            <li>Снижает расход комбикорма</li>
+            <li>Улучшает показатели продуктивности</li>
+            <li>Совместима с существующими рационами</li>
+          </ul>
           <h4>Для кого:</h4>
-          <p class="small">Птицефабрики, хозяйства КРС и МРС, комбикормовые заводы.</p>
-          <div class="btn-wrap"><a class="consult-btn" href="contact.html">Обсудить пилотное применение</a></div>
+          <p class="small">  Птицефабрики, хозяйства КРС и МРС, комбикормовые заводы</p>
+          <div class="btn-wrap"><a class="consult-btn" href="contact.html">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</a></div>
         </div>
       </section>
 
       <section class="partner-strip">
         <div class="container">
           <h3>Разработка биотехнологических решений под задачи партнёров</h3>
-          <!-- <p>Форматы сотрудничества: пилотные проекты, R&D и совместное внедрение.</p> -->
+          <!-- <p>Р¤РѕСЂРјР°С‚С‹ СЃРѕС‚СЂСѓРґРЅРёС‡РµСЃС‚РІР°: РїРёР»РѕС‚РЅС‹Рµ РїСЂРѕРµРєС‚С‹, R&D Рё СЃРѕРІРјРµСЃС‚РЅРѕРµ РІРЅРµРґСЂРµРЅРёРµ.</p> -->
         </div>
       </section>
 
       <section class="product-extra">
         <div class="container">
-          <p>Помимо собственных продуктов, команда CBFeed готова выступать технологическим партнёром для компаний агропромышленного сектора и смежных отраслей. Мы разрабатываем и адаптируем биотехнологические решения под конкретные производственные задачи — от кормовых добавок и биомасс до микробиологических продуктов для сельского хозяйства.</p>
-          <h3>Возможные направления сотрудничества:</h3>
-          <ul><li>разработка и адаптация кормовых решений</li><li>совместные R&D-проекты</li></ul>
-          <h3>Форматы сотрудничества:</h3>
-          <ul><li>контрактная разработка, технологические партнерства, совместные проекты.</li></ul>
-          <div class="btn-wrap"><a class="consult-btn" href="#">ОБСУДИТЬ ЗАДАЧУ</a></div>
+          <p>Помимо собственных продуктов, команда CBFeed готова выступать технологическим партнёром для компаний
+            агропромышленного сектора и смежных отраслей. Мы разрабатываем и адаптируем биотехнологические решения под
+            конкретные производственные задачи — от кормовых добавок и биомасс до микробиологических продуктов для
+            сельского хозяйства.</p>
+          <h3>Возможные
+направления сотрудничества:</h3>
+          <ul>
+            <li>разработка и адаптация кормовых биотехнологий</li>
+            <li>создание продуктов на основе микроорганизмов (B. subtilis и др.)</li>
+            <li>пилотирование и масштабирование биотехнологических решений</li>
+            <li>совместные R&D-проекты и лицензирование технологий</li>
+          </ul>
+          <h3>Форматы сотрудничества:  </h3>
+          <ul>
+            <li>контрактная разработка, технологическое партнёрство, совместные проекты.</li>
+          </ul>
+          <div class="btn-wrap"><a class="consult-btn" href="contact.html">ОбСУДИТЬ ЗАДАЧУ</a></div>
         </div>
       </section>
     </main>
 
     <footer class="footer">
       <div class="container footer-wrap">
-        <div class="footer-contacts"><p class="meta">Наш телефон:</p><a href="tel:+998909410608">+998 90 941 06 08</a><p class="meta">Наш почтовый адрес:</p><a href="mailto:info@cbfeed.uz">info@cbfeed.uz</a><p class="meta">Мы находимся по адресу:</p><address>г. Ташкент, ул. Шота Руставели, 12</address></div>
-        <div class="footer-links"><nav class="footer-nav"><a href="home.html">Главная</a><a href="about.html">О нас</a><a href="product.html">Каталог товаров</a><a href="#">Услуги</a></nav><nav class="footer-nav"><a href="media.html">Галерея</a><a href="contact.html">Контакты</a><a href="#">Оставить заявку</a></nav></div>
-        <div class="footer-socials"><a href="#"><img src="assets/images/icons/instagram.png" alt=""></a><a class="none" href="#"><img src="assets/images/icons/facebook.png" alt=""></a><a href="#"><img src="assets/images/icons/tg.png" alt=""></a></div>
+        <div class="footer-contacts">
+          <p class="meta">Наш телефон:</p><a href="tel:+998909410608">+998 90 941 06 08</a>
+          <p class="meta">Наш почтовый адрес:</p><a href="mailto:info@cbfeed.uz">info@cbfeed.uz</a>
+          <p class="meta">Мы находимся по адресу:</p>
+          <address>г. Ташкент, ул. Шота Руставели, 12</address>
+        </div>
+        <div class="footer-links">
+          <nav class="footer-nav"><a href="index.html">Главная</a><a href="about.html">О нас </a><a
+              href="product-list.html">Каталог товаров </a><a href="#">Услуги</a></nav>
+          <nav class="footer-nav"><a href="media.html">Галерея</a><a href="contact.html">Контакты</a><a
+              href="contact.html">Оставить заявку </a></nav>
+        </div>
+        <div class="footer-socials">
+          <a href="#"><img src="assets/insta-white.svg" alt=""></a>
+          <a class="none" href="#"><img src="assets/facebook-white.svg" alt=""></a>
+          <a href="#"><img src="assets/telegram-white.svg" alt=""></a>
+        </div>
       </div>
       <button class="to-top" aria-label="Наверх"></button>
     </footer>
   </div>
+  <script src="main.js"></script>
 </body>
+
 </html>
+
+
+
+

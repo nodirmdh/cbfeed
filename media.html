@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
@@ -7,53 +7,82 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="page">
     <header class="hero media-hero">
       <div class="container">
         <div class="topbar">
-          <a class="logo" href="home.html"><img src="assets/images/logo/logo.png" alt="CBFeed logo"></a>
-          <input type="checkbox" id="nav-toggle" class="nav-toggle">
-          <label for="nav-toggle" class="burger" aria-label="Открыть меню"><span></span><span></span><span></span></label>
-          <nav class="menu" aria-label="Главное меню">
-            <a href="home.html">ГЛАВНАЯ</a><a href="about.html">О НАС</a><a href="product.html">ПРОДУКТЫ</a><a href="investors.html">ИНВЕСТОРАМ</a><a href="#">КАРЬЕРА</a><a href="media.html">МЕДИА</a><a class="menu-contact" href="contact.html">КОНТАКТЫ</a>
-          </nav>
-          <div class="langs"><a class="current" href="#">RU</a><a href="#">UZ</a><a href="#">EN</a></div>
-        </div>
-        <h1>Медиа</h1>
+					<a class="logo" href="index.html"><img src="assets/logo-white.svg" alt="CBFeed logo"></a>
+					<input type="checkbox" id="nav-toggle" class="nav-toggle">
+						<label for="nav-toggle" class="burger"
+							aria-label="Открыть меню"><span></span><span></span><span></span></label>
+						<nav class="menu" aria-label="Главное меню">
+						<a href="index.html">ГЛАВНАЯ </a>
+						<a href="about.html">О НАС</a>
+						<a href="product-list.html">ПРОДУКТЫ</a>
+						<a href="investors.html">ИНВЕСТОРАМ</a>
+						<a href="#">КАРЬЕРА</a>
+						<a href="media.html">МЕДИА</a>
+						<a class="menu-contact" href="contact.html">КОНТАКТЫ</a>
+					</nav>
+					<div class="langs"><a class="current" href="#">RU</a><a href="#">UZ</a><a href="#">EN</a></div>
+				</div>
+        <h1>Галерея</h1>
       </div>
     </header>
 
     <main class="media-main">
       <section class="gallery-section">
         <div class="container">
-          <h2>Галерея</h2>
-          <div class="gallery-filters">
-            <button>Все</button><button>Производство</button><button>Мероприятия</button><button>Команда</button>
-          </div>
-          <div class="gallery-list">
-            <article class="gallery-item"><div class="ph">PHOTO</div><h3>Производственная площадка</h3></article>
-            <article class="gallery-item"><div class="ph">PHOTO</div><h3>Технологические испытания</h3></article>
-            <article class="gallery-item"><div class="ph">PHOTO</div><h3>Рабочая встреча</h3></article>
-            <article class="gallery-item"><div class="ph">PHOTO</div><h3>Отгрузка партнерам</h3></article>
-            <article class="gallery-item"><div class="ph">PHOTO</div><h3>Команда CBFeed</h3></article>
-            <article class="gallery-item"><div class="ph">PHOTO</div><h3>Семинар и презентация</h3></article>
-          </div>
+	        <h2>Галерея</h2>
+	          <div class="gallery-filters">
+	            <button>Все</button><button>Производство</button><button>Мероприятия</button><button>Команда</button>
+	          </div>
+	          <div class="gallery-list">
+	            <article class="gallery-item"><img class="ph" src="./assets/background-home.svg" alt="Фото"><h3>Производственная площадка</h3></article>
+	            <article class="gallery-item"><img class="ph" src="" alt="Фото"><h3>Технологические испытания</h3></article>
+	            <article class="gallery-item"><img class="ph" src="" alt="Фото"><h3>Рабочая встреча</h3></article>
+	            <article class="gallery-item"><img class="ph" src="" alt="Фото"><h3>Отгрузка партнерам</h3></article>
+	            <article class="gallery-item"><img class="ph" src="" alt="Фото"><h3>Команда CBFeed</h3></article>
+	            <article class="gallery-item"><img class="ph" src="" alt="Фото"><h3>Семинар и презентация</h3></article>
+	          </div>
         </div>
       </section>
     </main>
 
     <footer class="footer">
-      <div class="container footer-wrap">
-        <div class="footer-contacts"><p class="meta">Наш телефон:</p><a href="tel:+998909410608">+998 90 941 06 08</a><p class="meta">Наш почтовый адрес:</p><a href="mailto:info@cbfeed.uz">info@cbfeed.uz</a><p class="meta">Мы находимся по адресу:</p><address>г. Ташкент, ул. Шота Руставели, 12</address></div>
-        <div class="footer-links"><nav class="footer-nav"><a href="home.html">Главная</a><a href="about.html">О нас</a><a href="product.html">Каталог товаров</a><a href="#">Услуги</a></nav><nav class="footer-nav"><a href="media.html">Галерея</a><a href="contact.html">Контакты</a><a href="#">Оставить заявку</a></nav></div>
-        <div class="footer-socials"><a href="#"><img src="assets/images/icons/instagram.png" alt=""></a><a class="none" href="#"><img src="assets/images/icons/facebook.png" alt=""></a><a href="#"><img src="assets/images/icons/tg.png" alt=""></a></div>
-      </div>
-      <button class="to-top" aria-label="Наверх"></button>
-    </footer>
+			<div class="container footer-wrap">
+				<div class="footer-contacts">
+					<p class="meta">Наш телефон:</p><a href="tel:+998909410608">+998 90 941 06 08</a>
+					<p class="meta">Наш почтовый адрес:</p><a href="mailto:info@cbfeed.uz">info@cbfeed.uz</a>
+					<p class="meta">Мы находимся по адресу:</p>
+					<address>г. Ташкент, ул. Шота Руставели, 12</address>
+				</div>
+				<div class="footer-links">
+					<nav class="footer-nav"><a href="index.html">Главная</a><a href="about.html">О нас </a><a
+							href="product-list.html">Каталог товаров </a><a href="#">Услуги</a></nav>
+					<nav class="footer-nav"><a href="media.html">Галерея</a><a href="contact.html">Контакты</a><a
+							href="contact.html">Оставить заявку </a></nav>
+				</div>
+				<div class="footer-socials">
+					<a href="#"><img src="assets/insta-white.svg" alt=""></a>
+					<a class="none" href="#"><img src="assets/facebook-white.svg" alt=""></a>
+					<a href="#"><img src="assets/telegram-white.svg" alt=""></a>
+				</div>
+			</div>
+				<button class="to-top" aria-label="Наверх"></button>
+		</footer>
   </div>
+  <script src="main.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
