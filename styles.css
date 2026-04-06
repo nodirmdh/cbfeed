@@ -1641,7 +1641,7 @@ body {
 	}
 }
 
-@media (min-width: 1025px) and (max-width: 1330px) {
+@media (min-width: 1024px) and (max-width: 1330px) {
 	.bottombar h1 {
 		font-size: 55px;
 	}
@@ -1650,6 +1650,9 @@ body {
 		width: 288px;
 	}
 
+	.adv-card h3 {
+		font-size: 32px;
+	}
 	.white {
 		background-size: 34%;
 	}
