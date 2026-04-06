@@ -412,13 +412,18 @@ h1 {
 }
 
 @media (max-width: 1440px) {
+	.langs {
+		flex: 0 0 95px;
+	}
+
+	
 	/* .container {
 		width: min(100% - 48px, 1760px);
 	} */
 
 	.logo {
 		width: 80px;
-		flex-basis: 120px;
+		flex-basis: 80px;
 	}
 
 	.logo img {
@@ -435,7 +440,7 @@ h1 {
 	}
 
 	.menu a {
-		font-size: 13px;
+		font-size: 11px;
 	}
 
 	.langs a {
@@ -1564,6 +1569,78 @@ body {
 	justify-content: flex-end;
 }
 
+@media (max-width: 1024px) {
+	.bottombar h1 {
+		font-size: 55px;
+	}
+
+	.adv-card {
+		width: 288px;
+	}
+
+	.white {
+		background-size: 34%;
+	}
+
+	.promo {
+		height: 350px;
+	}
+
+	.promo-img {
+		width: 155px;
+	}
+
+	.promo-photo {
+		width: 300px;
+		height: 399px;
+	}
+
+	.promo-text {
+		margin-left: 0;
+	}
+
+	.promo-title img {
+		width: 84px;
+		flex: 0 0 84px;
+	}
+
+	.promo-title {
+		padding: 28px 24px 24px 81px;
+	}
+
+	.promo-title h3 {
+		font-size: 15px;
+	}
+
+	.promo-intext p {
+		font-size: 11px;
+	}
+
+	.promo-intext {
+		padding: 28px 24px 24px 81px;
+	}
+
+	.products .product-media {
+		height: 200px;
+	}
+
+	.section h2 {
+		font-size: 43px;
+	}
+
+	.why-item h3 {
+		font-size: 24px;
+	}
+
+	.why-item p {
+		font-size: 14px;
+	}
+
+	.eff-metrics div {
+		flex-basis: 30%;
+	}
+}
+
 @media (max-width: 1020px) {
 	.eff-logos {
 		flex-wrap: wrap;
@@ -2072,6 +2149,10 @@ body {
 	.contact-page .contact-hero h1 {
 		font-size: 60px;
 		margin-left: 100px;
+	}
+
+	.hero-copy h1 {
+		font-size: 55px;
 	}
 
 	.contact-list {
