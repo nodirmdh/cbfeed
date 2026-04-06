@@ -771,7 +771,7 @@ body {
 .hero-social {
 	position: absolute;
 	right: 16px;
-	bottom: 16%;
+	bottom: 0%;
 	transform: translateY(-50%);
 	background: #7fa97a;
 	border-radius: 28px;
