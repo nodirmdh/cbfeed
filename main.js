@@ -155,4 +155,71 @@
       a.textContent = t.nav.contacts;
     }
   });
+
+  const tabsBlock = document.querySelector(".tabs");
+  if (!tabsBlock) return;
+
+  const tabButtons = tabsBlock.querySelectorAll("button");
+  const setActive = (target) => {
+    tabButtons.forEach((b) => b.classList.toggle("active", b === target));
+  };
+
+  if (document.body.classList.contains("product-list-page")) {
+    const cards = document.querySelectorAll(".product-list-page .list-card");
+    cards.forEach((card, idx) => {
+      if (!card.dataset.category) {
+        card.dataset.category = idx < Math.ceil(cards.length * 0.66) ? "commercial" : "rnd";
+      }
+    });
+
+    tabButtons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const filter = btn.dataset.filter || "commercial";
+        setActive(btn);
+        cards.forEach((card) => {
+          card.style.display = card.dataset.category === filter ? "flex" : "none";
+        });
+      });
+    });
+  }
+
+  if (document.body.classList.contains("product-page")) {
+    const title = document.querySelector(".product-page .product-text h3");
+    const text = document.querySelector(".product-page .product-text p");
+    const btn = document.querySelector(".product-page .order-btn");
+    const photo = document.querySelector(".product-page .product-photo");
+    if (!title || !text || !btn) return;
+
+    const modes = {
+      commercial: {
+        title: "Кормовая добавка CBFeed",
+        text: "Биотехнологическая кормовая добавка для повышения продуктивности и снижения затрат на корм.",
+        cta: "ОФОРМИТЬ ЗАКАЗ",
+        photo: "./assets/background-home.svg",
+      },
+      rnd: {
+        title: "CBFeed Bio Mass",
+        text: "Пилотное R&D-решение на основе концентрированной биомассы для технологических применений.",
+        cta: "ОБСУДИТЬ ПИЛОТ",
+        photo: "./assets/certificate.svg",
+      },
+    };
+
+    const applyMode = (mode) => {
+      const cfg = modes[mode] || modes.commercial;
+      title.textContent = cfg.title;
+      text.textContent = cfg.text;
+      btn.textContent = cfg.cta;
+      if (photo && cfg.photo) {
+        photo.src = cfg.photo;
+      }
+    };
+
+    tabButtons.forEach((btnTab) => {
+      btnTab.addEventListener("click", () => {
+        setActive(btnTab);
+        applyMode(btnTab.dataset.mode || "commercial");
+      });
+    });
+  }
 });

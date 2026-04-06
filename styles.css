@@ -203,6 +203,12 @@ h1 {
 	z-index: 2;
 }
 
+.hero:not(.home-hero)>.container>h1 {
+	margin: 88px 0 0;
+	font-size: clamp(48px, 4.2vw, 72px);
+	line-height: 1.05;
+}
+
 .hero-art {
 	position: absolute;
 	pointer-events: none;
@@ -244,7 +250,7 @@ h1 {
 .investor-block h2 {
 	margin: 0;
 	color: var(--orange-dark);
-	font-size: 67px;
+	font-size: clamp(40px, 3.4vw, 56px);
 	line-height: 1.1;
 	font-weight: 700;
 }
@@ -252,7 +258,7 @@ h1 {
 .investor-block h3 {
 	margin: 20px 0 0;
 	color: var(--text);
-	font-size: 38px;
+	font-size: clamp(28px, 2.1vw, 42px);
 	line-height: 1.22;
 	font-weight: 700;
 }
@@ -261,7 +267,7 @@ h1 {
 	margin: 18px auto 0;
 	max-width: 1200px;
 	color: var(--text-soft);
-	font-size: 28px;
+	font-size: clamp(18px, 1.5vw, 28px);
 	line-height: 1.32;
 	font-weight: 500;
 }
@@ -333,11 +339,15 @@ h1 {
 }
 
 .footer-nav a {
-	color: #393a3f;
+	color: #9aa0af;
 	text-decoration: none;
 	font-size: 20px;
 	font-weight: 600;
 	line-height: 1.25;
+}
+
+.footer-nav a:hover {
+	color: #c8cdd8;
 }
 
 .footer-socials {
@@ -386,9 +396,9 @@ h1 {
 }
 
 .to-top {
-	position: absolute;
-	right: 38px;
-	bottom: 26px;
+	position: fixed;
+	right: 24px;
+	bottom: 24px;
 	width: 42px;
 	height: 42px;
 	border: 0;
@@ -402,6 +412,7 @@ h1 {
 	align-items: center;
 	justify-content: center;
 	transition: transform 0.2s ease, background-color 0.2s ease;
+	z-index: 80;
 }
 
 .to-top::before {
@@ -1514,7 +1525,7 @@ body {
 .consult-left h2 {
 	margin: 0;
 	color: #f1f1f1;
-	font-size: 50px;
+	font-size: clamp(36px, 3vw, 48px);
 	line-height: 1.15;
 	font-weight: 700;
 }
@@ -1522,7 +1533,7 @@ body {
 .consult-left p {
 	margin: 12px 0 48px;
 	color: #f2b58d;
-	font-size: 30px;
+	font-size: clamp(22px, 1.9vw, 32px);
 	line-height: 1.2;
 	font-weight: 700;
 }
@@ -1545,7 +1556,7 @@ body {
 	background: transparent;
 	color: #fff;
 	font-family: inherit;
-	font-size: 33px;
+	font-size: clamp(22px, 1.8vw, 30px);
 	font-weight: 500;
 	padding: 14px 0;
 	outline: none;
@@ -1566,14 +1577,14 @@ body {
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	width: 430px;
-	height: 58px;
+	width: 360px;
+	height: 50px;
 	border: 0;
 	border-radius: 999px;
 	background: #e98549;
 	color: #fff;
 	font-family: inherit;
-	font-size: 19px;
+	font-size: 16px;
 	font-weight: 700;
 	cursor: pointer;
 }
