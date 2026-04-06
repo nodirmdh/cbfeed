@@ -3461,3 +3461,28 @@ body {
 		font-size: 9px;
 	}
 }
+
+/* ===== Desktop/Laptop Range (1440-1730) ===== */
+@media (min-width: 1440px) and (max-width: 1730px) {
+	.logo img {
+		width: 80px;
+	}
+
+	.menu {
+		gap: 27px;
+	}
+
+	.menu a {
+		font-size: 16px;
+	}
+
+	.langs .current {
+		width: 36px;
+		height: 36px;
+		font-size: 17px;
+	}
+
+	.product-list-page .list-text .consult-btn {
+		font-size: 15px;
+	}
+}
