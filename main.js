@@ -136,11 +136,15 @@
   setText('.menu a[href="about.html"]', t.nav.about);
   setText('.menu a[href="product-list.html"]', t.nav.products);
   setText('.menu a[href="investors.html"]', t.nav.investors);
+  setText('.menu a[href="career.html"]', t.nav.career);
   setText('.menu a[href="media.html"]', t.nav.media);
   setText(".menu .menu-contact", t.nav.contacts);
 
   const career = Array.from(document.querySelectorAll(".menu a")).find(
-    (a) => (a.getAttribute("href") || "") === "#"
+    (a) => {
+      const href = (a.getAttribute("href") || "").toLowerCase();
+      return href === "career.html" || href === "#";
+    }
   );
   if (career) career.textContent = t.nav.career;
 
@@ -181,6 +185,11 @@
         });
       });
     });
+
+    const initial = tabsBlock.querySelector('button[data-filter="commercial"]') || tabButtons[0];
+    if (initial) {
+      initial.click();
+    }
   }
 
   if (document.body.classList.contains("product-page")) {

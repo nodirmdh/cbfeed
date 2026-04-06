@@ -1,0 +1,113 @@
+﻿<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Карьера | CBFeed</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="career-page">
+  <div class="page">
+    <header class="hero career-hero">
+      <div class="container">
+        <div class="topbar">
+          <a class="logo" href="index.html"><img src="assets/logo-white.svg" alt="CBFeed logo"></a>
+          <input type="checkbox" id="nav-toggle" class="nav-toggle">
+          <label for="nav-toggle" class="burger" aria-label="Открыть меню"><span></span><span></span><span></span></label>
+          <nav class="menu" aria-label="Главное меню">
+            <a href="index.html">ГЛАВНАЯ</a>
+            <a href="about.html">О НАС</a>
+            <a href="product-list.html">ПРОДУКТЫ</a>
+            <a href="investors.html">ИНВЕСТОРАМ</a>
+            <a href="career.html">КАРЬЕРА</a>
+            <a href="media.html">МЕДИА</a>
+            <a class="menu-contact" href="contact.html">КОНТАКТЫ</a>
+          </nav>
+          <div class="langs"><a class="current" href="#">RU</a><a href="#">UZ</a><a href="#">EN</a></div>
+        </div>
+        <h1>Карьера</h1>
+      </div>
+    </header>
+
+    <main class="career-main">
+      <section class="career-section">
+        <div class="container narrow">
+          <h2>Открытые вакансии</h2>
+          <p class="career-sub">Выберите вакансию, чтобы посмотреть подробности, и отправьте резюме через форму ниже.</p>
+
+          <div class="vacancy-list">
+            <details class="vacancy-card" open>
+              <summary>Менеджер по продажам (B2B)</summary>
+              <div class="vacancy-body">
+                <p><strong>Обязанности:</strong> развитие клиентской базы, проведение переговоров, сопровождение сделок.</p>
+                <p><strong>Требования:</strong> опыт в B2B-продажах, навыки презентации, знание CRM.</p>
+                <p><strong>Условия:</strong> фикс + KPI, официальное оформление, обучение.</p>
+              </div>
+            </details>
+
+            <details class="vacancy-card">
+              <summary>Технолог кормового производства</summary>
+              <div class="vacancy-body">
+                <p><strong>Обязанности:</strong> контроль технологических процессов, участие в испытаниях и внедрении решений.</p>
+                <p><strong>Требования:</strong> профильное образование, опыт в агро/биотех направлении.</p>
+                <p><strong>Условия:</strong> работа на производственной площадке, карьерный рост.</p>
+              </div>
+            </details>
+
+            <details class="vacancy-card">
+              <summary>Маркетолог (Digital)</summary>
+              <div class="vacancy-body">
+                <p><strong>Обязанности:</strong> контент-план, рекламные кампании, аналитика каналов.</p>
+                <p><strong>Требования:</strong> опыт в digital, уверенное владение аналитикой и соцсетями.</p>
+                <p><strong>Условия:</strong> гибридный формат, участие в развитии международного бренда.</p>
+              </div>
+            </details>
+          </div>
+
+          <div class="resume-box">
+            <h3>Отправить резюме</h3>
+            <form class="resume-form" action="#" method="post" enctype="multipart/form-data">
+              <label><input type="text" name="name" placeholder="Ваше имя" required></label>
+              <label><input type="email" name="email" placeholder="E-mail" required></label>
+              <label><input type="tel" name="phone" placeholder="Телефон"></label>
+              <label><textarea name="message" placeholder="Кратко расскажите о себе"></textarea></label>
+              <label class="file-label">Прикрепить резюме (PDF/DOC)
+                <input type="file" name="resume_file" accept=".pdf,.doc,.docx" required>
+              </label>
+              <button type="submit">Отправить резюме</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-wrap">
+        <div class="footer-contacts">
+          <p class="meta">Наш телефон:</p><a href="tel:+998909410608">+998 90 941 06 08</a>
+          <p class="meta">Наш почтовый адрес:</p><a href="mailto:info@cbfeed.uz">info@cbfeed.uz</a>
+          <p class="meta">Мы находимся по адресу:</p>
+          <address>г. Ташкент, ул. Шота Руставели, 12</address>
+        </div>
+        <div class="footer-links">
+          <nav class="footer-nav"><a href="index.html">Главная</a><a href="about.html">О нас</a><a href="product-list.html">Каталог товаров</a><a href="#">Услуги</a></nav>
+          <nav class="footer-nav"><a href="media.html">Галерея</a><a href="contact.html">Контакты</a><a href="contact.html">Оставить заявку</a></nav>
+        </div>
+        <div class="footer-socials">
+          <a href="#"><img src="assets/insta-white.svg" alt="Instagram"></a>
+          <a class="none" href="#"><img src="assets/facebook-white.svg" alt="Facebook"></a>
+          <a href="#"><img src="assets/telegram-white.svg" alt="Telegram"></a>
+        </div>
+      </div>
+      <button class="to-top" aria-label="Наверх"></button>
+    </footer>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
