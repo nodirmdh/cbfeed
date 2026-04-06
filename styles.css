@@ -3306,3 +3306,134 @@ body {
 		font-size: 32px;
 	}
 }
+
+/* ===== Final Laptop Overrides (1024-1330) ===== */
+@media (min-width: 1024px) and (max-width: 1330px) {
+	.bottombar h1 {
+		font-size: 55px;
+	}
+
+	.white {
+		background-size: 34%;
+	}
+
+	.adv-card {
+		width: 288px;
+	}
+
+	.adv-card h3 {
+		font-size: 32px;
+	}
+
+	.promo {
+		height: 350px;
+	}
+
+	.promo-img {
+		width: 155px;
+	}
+
+	.promo-photo {
+		width: 300px;
+		height: 399px;
+	}
+
+	.promo-text {
+		margin-left: 0;
+	}
+
+	.promo-title img {
+		width: 84px;
+		flex: 0 0 84px;
+	}
+
+	.promo-title {
+		padding: 28px 24px 24px 101px;
+	}
+
+	.promo-title h3 {
+		font-size: 15px;
+	}
+
+	.promo-intext {
+		padding: 28px 24px 24px 101px;
+	}
+
+	.promo-intext p {
+		font-size: 11px;
+	}
+
+	.products .product-media {
+		height: 200px;
+	}
+
+	.section h2,
+	.gallery-section h2 {
+		font-size: 43px;
+	}
+
+	.why-item h3 {
+		font-size: 24px;
+	}
+
+	.why-item p {
+		font-size: 14px;
+	}
+
+	.eff-metrics div {
+		flex-basis: 30%;
+	}
+
+	.about-main .avatar {
+		width: 228px;
+		height: 228px;
+	}
+
+	.about-main .team-card {
+		min-width: 240px;
+	}
+
+	.about-main .history-list::before {
+		bottom: 171px;
+	}
+
+	.contact-page .contact-list a,
+	.contact-page .contact-list address {
+		font-size: 27px;
+	}
+
+	.product-intro .container {
+		width: 80%;
+	}
+
+	.product-page .product-photo {
+		width: 320px;
+		height: 320px;
+	}
+
+	.product-page .product-text h3 {
+		font-size: 36px;
+	}
+
+	.product-page .product-text p {
+		font-size: 16px;
+	}
+
+	.product-page .product-text a,
+	.product-page .consult-btn,
+	.product-list-page .consult-btn {
+		font-size: 16px;
+	}
+
+	.product-list-page .list-text h3 {
+		font-size: 24px;
+	}
+
+	.product-list-page .list-text p {
+		font-size: 13px;
+	}
+
+	.product-list-page .list-text .consult-btn {
+		font-size: 9px;
+	}
+}
