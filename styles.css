@@ -1711,6 +1711,36 @@ body {
 	.eff-metrics div {
 		flex-basis: 30%;
 	}
+
+	.avatar {
+		width: 228px;
+		height: 228px;
+	}
+
+	.team-card {
+		min-width: 240px;
+	}
+
+	.history-list::before {
+		bottom: 171px;
+	}
+
+	.product-list-page .list-text h3 {
+		font-size: 24px;
+	}
+
+	.product-list-page .list-text p {
+		font-size: 13px;
+	}
+
+	.product-list-page .list-text .consult-btn {
+		font-size: 9px;
+	}
+
+	.contact-list a,
+	.contact-list address {
+		font-size: 27px;
+	}
 }
 
 @media (max-width: 1020px) {
