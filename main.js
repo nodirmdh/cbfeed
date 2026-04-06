@@ -7,4 +7,152 @@
       window.scrollTo({ top: 0, behavior: "smooth" });
     });
   });
+
+  const normalizePath = (path) => {
+    if (!path || path === "/") return "index.html";
+    return path.split("/").pop();
+  };
+
+  const currentPath = normalizePath(window.location.pathname);
+
+  const menuLinks = document.querySelectorAll(".menu a[href]");
+  menuLinks.forEach((link) => {
+    const href = link.getAttribute("href");
+    if (!href || href.startsWith("#")) return;
+    const linkPath = normalizePath(href);
+    if (linkPath === currentPath) {
+      link.classList.add("is-active");
+    }
+  });
+
+  const socialMap = {
+    instagram: "https://www.instagram.com/cbfeed?igsh=OGV6aGZvc2hnZnMw",
+    facebook: "https://www.facebook.com/share/1RU4dd53oR/",
+    telegram: "https://t.me/cbfeed1",
+  };
+
+  document.querySelectorAll("a").forEach((anchor) => {
+    const img = anchor.querySelector("img");
+    if (!img) return;
+    const src = (img.getAttribute("src") || "").toLowerCase();
+
+    if (src.includes("insta")) {
+      anchor.href = socialMap.instagram;
+      anchor.target = "_blank";
+      anchor.rel = "noopener noreferrer";
+    } else if (src.includes("facebook")) {
+      anchor.href = socialMap.facebook;
+      anchor.target = "_blank";
+      anchor.rel = "noopener noreferrer";
+    } else if (src.includes("telegram")) {
+      anchor.href = socialMap.telegram;
+      anchor.target = "_blank";
+      anchor.rel = "noopener noreferrer";
+    }
+  });
+
+  const messages = {
+    ru: {
+      nav: {
+        index: "ГЛАВНАЯ",
+        about: "О НАС",
+        products: "ПРОДУКТЫ",
+        investors: "ИНВЕСТОРАМ",
+        career: "КАРЬЕРА",
+        media: "МЕДИА",
+        contacts: "КОНТАКТЫ",
+      },
+      common: {
+        consult: "Получить консультацию",
+        gallery: "Галерея",
+        leaveRequest: "Оставить заявку",
+      },
+    },
+    uz: {
+      nav: {
+        index: "BOSH SAHIFA",
+        about: "BIZ HAQIMIZDA",
+        products: "MAHSULOTLAR",
+        investors: "INVESTORLARGA",
+        career: "KARYERA",
+        media: "MEDIA",
+        contacts: "ALOQA",
+      },
+      common: {
+        consult: "Maslahat olish",
+        gallery: "Galereya",
+        leaveRequest: "So'rov qoldirish",
+      },
+    },
+    en: {
+      nav: {
+        index: "HOME",
+        about: "ABOUT",
+        products: "PRODUCTS",
+        investors: "INVESTORS",
+        career: "CAREER",
+        media: "MEDIA",
+        contacts: "CONTACTS",
+      },
+      common: {
+        consult: "Get consultation",
+        gallery: "Gallery",
+        leaveRequest: "Leave request",
+      },
+    },
+  };
+
+  const params = new URLSearchParams(window.location.search);
+  const requestedLang = (params.get("lang") || "").toLowerCase();
+  const savedLang = (localStorage.getItem("cbfeed-lang") || "").toLowerCase();
+  const lang = messages[requestedLang]
+    ? requestedLang
+    : messages[savedLang]
+    ? savedLang
+    : "ru";
+
+  localStorage.setItem("cbfeed-lang", lang);
+
+  const langBox = document.querySelector(".langs");
+  if (langBox) {
+    const links = langBox.querySelectorAll("a");
+    links.forEach((a) => {
+      const code = (a.textContent || "").trim().toLowerCase();
+      if (!["ru", "uz", "en"].includes(code)) return;
+      a.href = `${currentPath}?lang=${code}`;
+      a.classList.toggle("current", code === lang);
+    });
+  }
+
+  const setText = (selector, text) => {
+    const el = document.querySelector(selector);
+    if (el && typeof text === "string") {
+      el.textContent = text;
+    }
+  };
+
+  const t = messages[lang];
+  setText('.menu a[href="index.html"]', t.nav.index);
+  setText('.menu a[href="about.html"]', t.nav.about);
+  setText('.menu a[href="product-list.html"]', t.nav.products);
+  setText('.menu a[href="investors.html"]', t.nav.investors);
+  setText('.menu a[href="media.html"]', t.nav.media);
+  setText(".menu .menu-contact", t.nav.contacts);
+
+  const career = Array.from(document.querySelectorAll(".menu a")).find(
+    (a) => (a.getAttribute("href") || "") === "#"
+  );
+  if (career) career.textContent = t.nav.career;
+
+  setText(".hero-btn", t.common.consult);
+  setText('.footer-nav a[href="media.html"]', t.common.gallery);
+
+  document.querySelectorAll('.footer-nav a[href="contact.html"]').forEach((a) => {
+    const txt = (a.textContent || "").trim().toLowerCase();
+    if (txt.includes("заяв") || txt.includes("leave") || txt.includes("so")) {
+      a.textContent = t.common.leaveRequest;
+    } else {
+      a.textContent = t.nav.contacts;
+    }
+  });
 });
