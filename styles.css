@@ -2071,8 +2071,8 @@ body {
 	}
 
 	.about-hero-text {
-		max-width: 760px;
-		padding: 30px 0 56px;
+		max-width: 960px;
+		padding: 20px 0 56px;
 	}
 
 	.about-hero-text h1 {
@@ -2081,7 +2081,7 @@ body {
 	}
 
 	.about-hero-text p {
-		font-size: clamp(17px, 1vw, 19px);
+		font-size: clamp(17px, 1vw, 17px);
 		line-height: 1.36;
 	}
 }
@@ -2236,7 +2236,7 @@ body {
 
 @media (max-width: 1020px) {
 	.about-hero-text {
-		max-width: 100%;
+		width: 100%;
 		padding: 22px 0 38px;
 	}
 
@@ -3475,7 +3475,7 @@ body {
 	}
 
 	.about-hero-text p {
-		font-size: 16px;
+		font-size: 15px;
 	}
 
 	.about-main h2 {
@@ -3682,7 +3682,7 @@ body {
 /* ===== Final Laptop Overrides (1024-1330) ===== */
 @media (min-width: 1024px) and (max-width: 1330px) {
 	.about-hero-text p {
-		font-size: clamp(16px, 0.7vw + 9px, 18px);
+		font-size: clamp(16px, 0.7vw + 9px, 16px);
 		line-height: 1.34;
 	}
 
@@ -3820,6 +3820,8 @@ body {
 
 /* ===== Desktop/Laptop Range (1440-1730) ===== */
 @media (min-width: 1440px) and (max-width: 1730px) {
+
+	
 
 	.promo-title h3 {
 		font-size: 22px;
