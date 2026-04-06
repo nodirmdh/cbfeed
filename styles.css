@@ -1766,6 +1766,29 @@ body {
 	.gallery-section h2 {
 		font-size: 43px;
 	}
+
+	.product-intro .container {
+		width: 80%;
+	}
+
+	.product-page .product-photo {
+		width: 320px;
+		height: 320px;
+	}
+
+	.product-page .product-text h3 {
+		font-size: 36px;
+	}
+
+	.product-page .product-text p {
+		font-size: 16px;
+	}
+
+	.product-page .product-text a,
+	.product-page .consult-btn,
+	.product-list-page .consult-btn {
+		font-size: 16px;
+	}
 }
 
 @media (max-width: 1020px) {
