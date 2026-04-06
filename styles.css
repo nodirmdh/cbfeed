@@ -1605,7 +1605,7 @@ body {
 	}
 
 	.promo-title {
-		padding: 28px 24px 24px 81px;
+		padding: 28px 24px 24px 101px;
 	}
 
 	.promo-title h3 {
@@ -1617,7 +1617,79 @@ body {
 	}
 
 	.promo-intext {
-		padding: 28px 24px 24px 81px;
+		padding: 28px 24px 24px 101px;
+	}
+
+	.products .product-media {
+		height: 200px;
+	}
+
+	.section h2 {
+		font-size: 43px;
+	}
+
+	.why-item h3 {
+		font-size: 24px;
+	}
+
+	.why-item p {
+		font-size: 14px;
+	}
+
+	.eff-metrics div {
+		flex-basis: 30%;
+	}
+}
+
+@media (min-width: 1025px) and (max-width: 1330px) {
+	.bottombar h1 {
+		font-size: 55px;
+	}
+
+	.adv-card {
+		width: 288px;
+	}
+
+	.white {
+		background-size: 34%;
+	}
+
+	.promo {
+		height: 350px;
+	}
+
+	.promo-img {
+		width: 155px;
+	}
+
+	.promo-photo {
+		width: 300px;
+		height: 399px;
+	}
+
+	.promo-text {
+		margin-left: 0;
+	}
+
+	.promo-title img {
+		width: 84px;
+		flex: 0 0 84px;
+	}
+
+	.promo-title {
+		padding: 28px 24px 24px 101px;
+	}
+
+	.promo-title h3 {
+		font-size: 15px;
+	}
+
+	.promo-intext p {
+		font-size: 11px;
+	}
+
+	.promo-intext {
+		padding: 28px 24px 24px 101px;
 	}
 
 	.products .product-media {
