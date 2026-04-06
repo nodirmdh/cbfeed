@@ -2994,6 +2994,26 @@ body {
 		width: 100%;
 	}
 
+	.adv-card {
+		width: fit-content;
+	}
+
+	.promo {
+		height: fit-content;
+	}
+
+	.why-list {
+		margin: 0 60px;
+	}
+
+	.clients-card img {
+		width: 130px;
+	}
+
+	.clients-card h4 {
+		font-size: 20px;
+	}
+
 	.clients-title h3 {
 		font-size: 26px;
 	}
@@ -3130,6 +3150,10 @@ body {
 	.avatar {
 		width: 180px;
 		height: 180px;
+	}
+
+	.about-main .history-list::before {
+		bottom: 126px;
 	}
 
 	/* Contact */
