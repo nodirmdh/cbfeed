@@ -366,7 +366,7 @@ h1 {
 .footer-nav a {
 	color: #b1b7c4;
 	text-decoration: none;
-	font-size: 20px;
+	font-size: 16px;
 	font-weight: 600;
 	line-height: 1.25;
 }
@@ -544,7 +544,7 @@ h1 {
 	}
 
 	.footer-nav a {
-		font-size: 20px;
+		font-size: 16px;
 	}
 
 	.footer-socials {
@@ -699,7 +699,7 @@ h1 {
 	}
 
 	.footer-nav a {
-		font-size: 20px;
+		font-size: 16px;
 	}
 
 	.footer-socials {
@@ -768,7 +768,7 @@ body {
 }
 
 .bottombar h1 {
-	font-size: clamp(36px, 4.6vw, 32px);
+	font-size: clamp(42px, 4.6vw, 55px);
 	line-height: 1.03;
 	font-weight: 800;
 	padding: 0;
@@ -817,7 +817,7 @@ body {
 .hero-social {
 	position: fixed;
 	right: 24px;
-	bottom: 108px;
+	top: 108px;
 	transform: none;
 	background: #7fa97a;
 	border-radius: 999px;
@@ -865,7 +865,7 @@ body {
 
 .home-hero .hero-social {
 	right: 24px;
-	bottom: 108px;
+	top: 62px;
 }
 
 .home-main {
@@ -2429,6 +2429,11 @@ body {
 	margin-right: 30px;
 }
 
+.contact-icon img {
+	width: 42px;
+	height: 42px;
+}
+
 .contact-list a,
 .contact-list address {
 	color: #fff;
@@ -2756,7 +2761,7 @@ body {
 	text-align: center;
 	margin: 0 0 10px;
 	color: #5c8f5a;
-	font-size: 36px;
+	font-size: 42px;
 	line-height: 1.2;
 }
 
@@ -3381,7 +3386,7 @@ body {
 	.footer-contacts a,
 	.footer-contacts address,
 	.footer-nav a {
-		font-size: 15px;
+		font-size: 16px;
 		color: #8e94a1;
 	}
 
@@ -3940,7 +3945,7 @@ body {
 
 	.promo-title h3 {
 		font-size: 42px;
-		width: 480px;
+		width: 90%;
 		font-weight: 700;
 	}
 	.logo img {
