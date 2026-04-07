@@ -817,21 +817,22 @@ body {
 .hero-social {
 	position: fixed;
 	right: 24px;
-	bottom: 84px;
+	bottom: 108px;
 	transform: none;
 	background: #7fa97a;
-	border-radius: 28px;
-	padding: 16px 10px;
+	border-radius: 999px;
+	width: 42px;
+	padding: 8px 0;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 12px;
+	gap: 8px;
 	z-index: 79;
 }
 
 .hero-social a {
-	width: 36px;
-	height: 36px;
+	width: 30px;
+	height: 30px;
 	border-radius: 50%;
 	background: #fff;
 	display: inline-flex;
@@ -840,13 +841,13 @@ body {
 }
 
 .hero-social img {
-	width: 25px;
-	height: 28px;
+	width: 20px;
+	height: 20px;
 }
 
 .hero-social a.none {
-	width: 40px;
-	height: 40px;
+	width: 30px;
+	height: 30px;
 	border-radius: 50%;
 	text-decoration: none;
 	background: #7fa97a;
@@ -856,15 +857,15 @@ body {
 }
 
 .hero-social a.none img {
-	width: 40px;
-	height: 40px;
+	width: 34px;
+	height: 34px;
 	object-fit: contain;
 
 }
 
 .home-hero .hero-social {
 	right: 24px;
-	bottom: 84px;
+	bottom: 108px;
 }
 
 .home-main {
@@ -1030,10 +1031,12 @@ body {
 
 .promo-title h3 {
 	color: #434343;
-	font-size: clamp(16px, 2vw, 30px);
+	font-size: 42px;
 	line-height: 1.06;
 	max-width: 860px;
 	margin: 0;
+	padding-left: 10px;
+	font-weight: 700;
 }
 
 .promo-intext {
@@ -2159,7 +2162,7 @@ body {
 	position: absolute;
 	left: 12px;
 	top: 30px;
-	bottom: 115px;
+	bottom: 125px;
 	width: 2px;
 	background: #7c9f78;
 	border-radius: 3px;
@@ -2191,6 +2194,12 @@ body {
 	color: #505050;
 	font-size: 19px;
 	line-height: 1.4;
+}
+
+.history-item span {
+	font-size: 21px;
+	font-weight: 600;
+	color: #505050;
 }
 
 .history-art {
@@ -2249,22 +2258,23 @@ body {
 .team-card h4 {
 	margin: 0 0 4px;
 	color: #e67d39;
-	font-size: 15px;
+	font-size: 17px;
 	line-height: 1.2;
 }
 
 .team-card p {
 	margin: 0;
 	color: #7a7a7a;
-	font-size: 13px;
+	font-size: 15px;
 	line-height: 1.25;
 }
 
 .team-info span {
 	display: block;
-	font-size: 13px;
+	font-size: 15px;
 	color: #7a7a7a;
 	margin: 4px 0;
+	font-weight: 600;
 	/* width: 62px;
 	height: 1px; */
 	/* background: #d4d4d4; */
@@ -3929,8 +3939,9 @@ body {
 
 
 	.promo-title h3 {
-		font-size: 22px;
+		font-size: 42px;
 		width: 480px;
+		font-weight: 700;
 	}
 	.logo img {
 		width: 140px;

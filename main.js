@@ -8,6 +8,18 @@
     });
   });
 
+  const heroDownLink = document.querySelector('.hero-down a[href^="#"]');
+  if (heroDownLink) {
+    heroDownLink.addEventListener("click", (event) => {
+      event.preventDefault();
+      const targetId = heroDownLink.getAttribute("href");
+      const target = targetId ? document.querySelector(targetId) : null;
+      if (target) {
+        target.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    });
+  }
+
   const normalizePath = (path) => {
     if (!path || path === "/") return "index.html";
     return path.split("/").pop();
