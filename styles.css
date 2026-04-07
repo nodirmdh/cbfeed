@@ -725,7 +725,7 @@ body {
 }
 
 .home-hero {
-	min-height: 100vh;
+	height: 100vh;
 	background: linear-gradient(rgba(20, 20, 20, 0.55), rgba(20, 20, 20, 0.55)), url("./assets/background-home.svg") center/cover no-repeat;
 	color: #fff;
 }
@@ -734,7 +734,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	position: relative;
-	min-height: 100vh;
+	height: 100vh;
 }
 
 .bottombar {
@@ -751,23 +751,24 @@ body {
 .hero-copy {
 	display: flex;
 	flex-direction: column;
-	gap: 20px;
+	gap: 10px;
 }
 
 .hero-copy h1 {
 	margin: 0;
+	
 }
 
 .bottombar h2 {
 	color: #e67d39;
-	font-size: clamp(36px, 3vw, 56px);
+	font-size: clamp(32px, 3vw, 32px);
 	line-height: 1;
 	padding: 0;
 	margin: 10px 0;
 }
 
 .bottombar h1 {
-	font-size: clamp(52px, 4.6vw, 68px);
+	font-size: clamp(36px, 4.6vw, 32px);
 	line-height: 1.03;
 	font-weight: 800;
 	padding: 0;
@@ -3245,12 +3246,18 @@ body {
 	}
 
 	.menu {
-		top: 64px;
+		position: fixed;
+		top: 76px;
+		left: 16px;
+		right: 16px;
 		max-width: none;
-		width: 100%;
+		width: auto;
 		padding: 14px 16px;
 		gap: 12px;
 		border-radius: 16px;
+		max-height: calc(100vh - 92px);
+		overflow-y: auto;
+		z-index: 120;
 	}
 
 	.menu a {
@@ -3774,9 +3781,19 @@ body {
 		font-size: clamp(16px, 0.7vw + 9px, 16px);
 		line-height: 1.34;
 	}
-
+	.bottombar {
+		padding-top: 0;
+	}
 	.bottombar h1 {
-		font-size: 55px;
+		font-size: 35px;
+	}
+
+	.hero-btn {
+		font-size: 16px;
+	}
+
+	.hero-down {
+		padding: 10px 0;
 	}
 
 	.white {
@@ -3910,7 +3927,6 @@ body {
 /* ===== Desktop/Laptop Range (1440-1730) ===== */
 @media (min-width: 1440px) and (max-width: 1730px) {
 
-	
 
 	.promo-title h3 {
 		font-size: 22px;
@@ -3940,5 +3956,12 @@ body {
 
 	.product-list-page .list-text .consult-btn {
 		font-size: 15px;
+	}
+}
+
+@media (min-width: 1330px) and (max-width: 1690px) {
+	.white {
+		background-size: 33%;
+		background-position: right 18px top 250px;
 	}
 }
