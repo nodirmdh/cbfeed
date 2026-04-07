@@ -206,7 +206,7 @@ h1 {
 
 .hero:not(.home-hero)>.container>h1 {
 	margin: 88px 0 0;
-	font-size: clamp(48px, 4.2vw, 72px);
+	font-size: 55px;
 	line-height: 1.05;
 }
 
@@ -523,11 +523,11 @@ h1 {
 	}
 
 	.investor-block h3 {
-		font-size: 42px;
+		font-size: 30px;
 	}
 
 	.investor-block p {
-		font-size: 31px;
+		font-size: 21px;
 	}
 
 	.cta {
@@ -821,8 +821,8 @@ body {
 	transform: none;
 	background: #7fa97a;
 	border-radius: 999px;
-	width: 42px;
-	padding: 8px 0;
+	width: 56px;
+	padding: 11px 0;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -831,8 +831,8 @@ body {
 }
 
 .hero-social a {
-	width: 30px;
-	height: 30px;
+	width: 42px;
+	height: 42px;
 	border-radius: 50%;
 	background: #fff;
 	display: inline-flex;
@@ -841,13 +841,13 @@ body {
 }
 
 .hero-social img {
-	width: 20px;
-	height: 20px;
+	width: 28px;
+	height: 28px;
 }
 
 .hero-social a.none {
-	width: 30px;
-	height: 30px;
+	width: 42px;
+	height: 42px;
 	border-radius: 50%;
 	text-decoration: none;
 	background: #7fa97a;
@@ -857,8 +857,8 @@ body {
 }
 
 .hero-social a.none img {
-	width: 34px;
-	height: 34px;
+	width: 48px;
+	height: 48px;
 	object-fit: contain;
 
 }
@@ -2392,7 +2392,7 @@ body {
 	justify-content: flex-start;
 	align-self: flex-start;
 	margin: 0;
-	font-size: 64px;
+	font-size: 55px;
 }
 
 .contact-list {
