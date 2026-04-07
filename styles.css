@@ -465,7 +465,7 @@ h1 {
 		flex: 0 0 95px;
 	}
 
-	
+
 	/* .container {
 		width: min(100% - 48px, 1760px);
 	} */
@@ -490,6 +490,7 @@ h1 {
 	.topbar {
 		gap: 7px;
 	}
+
 	.menu a {
 		font-size: 11px;
 		padding: 10px 12px;
@@ -756,7 +757,7 @@ body {
 
 .hero-copy h1 {
 	margin: 0;
-	
+
 }
 
 .bottombar h2 {
@@ -980,7 +981,7 @@ body {
 	max-width: none;
 	margin: 100px 0 0;
 	align-items: stretch;
-		margin-left: 200px;
+	margin-left: 200px;
 
 }
 
@@ -1231,13 +1232,14 @@ body {
 	border-radius: 34px;
 	min-height: 92px;
 	padding: 18px 98px 18px 26px;
+	width: fit-content;
 }
 
 .why-icon {
 	width: 101px;
 	height: 101px;
 	position: absolute;
-	right:-42px;
+	right: -42px;
 	top: 20px;
 	transform: translateY(-50%);
 	background: #d48654;
@@ -1762,6 +1764,7 @@ body {
 	.adv-card h3 {
 		font-size: 32px;
 	}
+
 	.white {
 		background-size: 34%;
 	}
@@ -2728,6 +2731,7 @@ body {
 .product-intro .container {
 	width: 60%;
 }
+
 .product-intro,
 .product-extra {
 	padding: 54px 0;
@@ -3723,16 +3727,61 @@ body {
 }
 
 @media (max-width: 480px) {
+	.why-list {
+		margin: 120px 0 0 0;
+	}
+
+	.why-icon {
+		right: 0;
+		margin: auto;
+		position: absolute;
+		top: -30px;
+		left: 0;
+		/* bottom: 0; */
+		/* right: 0; */
+	}
+
+	.why-item {
+		padding: 20px;
+	}
+	.why-item:nth-child(n+4) {
+		padding: 20px;
+	}
+	.why-item:nth-child(even) .why-icon {
+		left: 0;
+		right: 0;
+	}
+
+	.investor-block {
+		width: 90%;
+	}
+
+	.product-intro .container {
+		width: 80%;
+	}
+
+	.history-item::before {
+		left: -35px;
+	}
+
+	.about-main .history-list::before {
+		bottom: 265px;
+	}
+
+	.history-item p {
+		margin-top: 10px;
+	}
+
 	.promo-title img {
 		display: none;
 	}
 
-		.footer-socials {
+	.footer-socials {
 
-			margin: 20px auto 0;
-			flex-direction: row;
+		margin: 20px auto 0;
+		flex-direction: row;
 
-		}
+	}
 
 	.promo-title h3 {
 		font-size: 16px;
@@ -3796,9 +3845,11 @@ body {
 		font-size: clamp(16px, 0.7vw + 9px, 16px);
 		line-height: 1.34;
 	}
+
 	.bottombar {
 		padding-top: 0;
 	}
+
 	.bottombar h1 {
 		font-size: 35px;
 	}
@@ -3827,9 +3878,11 @@ body {
 		height: 350px;
 		margin-left: 110px;
 	}
+
 	.products {
 		background-size: contain;
 	}
+
 	.promo-img {
 		width: 155px;
 	}
@@ -3948,6 +4001,7 @@ body {
 		width: 90%;
 		font-weight: 700;
 	}
+
 	.logo img {
 		width: 140px;
 	}
