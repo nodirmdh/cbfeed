@@ -64,8 +64,13 @@
       },
       common: {
         consult: "Получить консультацию",
-        gallery: "Галерея",
-        leaveRequest: "Оставить заявку",
+        footerHome: "Главная",
+        footerAbout: "О нас",
+        footerProducts: "Продукты",
+        footerInvestors: "Инвесторам",
+        footerCareer: "Карьера",
+        footerMedia: "Медиа",
+        footerContacts: "Контакты",
       },
     },
     uz: {
@@ -80,8 +85,13 @@
       },
       common: {
         consult: "Maslahat olish",
-        gallery: "Galereya",
-        leaveRequest: "So'rov qoldirish",
+        footerHome: "Bosh sahifa",
+        footerAbout: "Biz haqimizda",
+        footerProducts: "Mahsulotlar",
+        footerInvestors: "Investorlar",
+        footerCareer: "Karyera",
+        footerMedia: "Media",
+        footerContacts: "Aloqa",
       },
     },
     en: {
@@ -96,8 +106,13 @@
       },
       common: {
         consult: "Get consultation",
-        gallery: "Gallery",
-        leaveRequest: "Leave request",
+        footerHome: "Home",
+        footerAbout: "About",
+        footerProducts: "Products",
+        footerInvestors: "Investors",
+        footerCareer: "Career",
+        footerMedia: "Media",
+        footerContacts: "Contacts",
       },
     },
   };
@@ -149,16 +164,30 @@
   if (career) career.textContent = t.nav.career;
 
   setText(".hero-btn", t.common.consult);
-  setText('.footer-nav a[href="media.html"]', t.common.gallery);
 
-  document.querySelectorAll('.footer-nav a[href="contact.html"]').forEach((a) => {
-    const txt = (a.textContent || "").trim().toLowerCase();
-    if (txt.includes("заяв") || txt.includes("leave") || txt.includes("so")) {
-      a.textContent = t.common.leaveRequest;
-    } else {
-      a.textContent = t.nav.contacts;
-    }
-  });
+  const setFooterLink = (href, text, index = 0) => {
+    const links = document.querySelectorAll(`.footer-nav a[href="${href}"]`);
+    if (links[index]) links[index].textContent = text;
+  };
+
+  setFooterLink("index.html", t.common.footerHome);
+  setFooterLink("about.html", t.common.footerAbout);
+  setFooterLink("product-list.html", t.common.footerProducts);
+  setFooterLink("investors.html", t.common.footerInvestors);
+  setFooterLink("career.html", t.common.footerCareer);
+  setFooterLink("media.html", t.common.footerMedia);
+  setFooterLink("contact.html", t.common.footerContacts);
+
+  const homeProductGrid = document.querySelector(".home-main .product-grid");
+  const homeProductNext = document.querySelector(".home-main .products-next");
+  if (homeProductGrid && homeProductNext) {
+    homeProductNext.addEventListener("click", () => {
+      homeProductGrid.scrollBy({
+        left: homeProductGrid.clientWidth * 0.8,
+        behavior: "smooth",
+      });
+    });
+  }
 
   const tabsBlock = document.querySelector(".tabs");
   if (!tabsBlock) return;
@@ -222,6 +251,9 @@
       if (photo && cfg.photo) {
         photo.src = cfg.photo;
       }
+
+      const isCommercial = (mode || "commercial") === "commercial";
+      document.body.classList.toggle("commercial-mode", isCommercial);
     };
 
     tabButtons.forEach((btnTab) => {
@@ -230,5 +262,11 @@
         applyMode(btnTab.dataset.mode || "commercial");
       });
     });
+
+    const initialModeBtn =
+      tabsBlock.querySelector('button[data-mode="commercial"]') || tabButtons[0];
+    if (initialModeBtn) {
+      initialModeBtn.click();
+    }
   }
 });
