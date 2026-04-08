@@ -251,7 +251,7 @@ h1 {
 .investor-block h2 {
 	margin: 0;
 	color: var(--orange-dark);
-	font-size: clamp(40px, 3.4vw, 56px);
+	font-size: clamp(40px, 3.4vw, 48px);
 	line-height: 1.1;
 	font-weight: 700;
 }
@@ -268,7 +268,7 @@ h1 {
 	margin: 18px auto 0;
 	max-width: 1200px;
 	color: var(--text-soft);
-	font-size: clamp(18px, 1.5vw, 28px);
+	font-size: clamp(16px, 1.5vw, 24px);
 	line-height: 1.32;
 	font-weight: 500;
 }
@@ -963,12 +963,15 @@ body {
 	font-size: 38px;
 	line-height: 1.02;
 	margin: 0;
+	min-height: 126px;
+	display: block;
 }
 
 .adv-card p {
 	color: #737373;
 	font-size: 16px;
 	line-height: 1.4;
+	margin: 0;
 }
 
 .promo {
@@ -1763,6 +1766,7 @@ body {
 
 	.adv-card h3 {
 		font-size: 32px;
+		min-height: 104px;
 	}
 
 	.white {
@@ -3872,6 +3876,7 @@ body {
 
 	.adv-card h3 {
 		font-size: 32px;
+		min-height: 104px;
 	}
 
 	.promo {
@@ -3994,11 +3999,16 @@ body {
 
 /* ===== Desktop/Laptop Range (1440-1730) ===== */
 @media (min-width: 1440px) and (max-width: 1730px) {
-
-
+	.adv-card h3 {
+		font-size: 36px;
+		min-height: 116px;
+	}
+	.section h2 {
+		font-size: 48px;
+	}
 	.promo-title h3 {
-		font-size: 42px;
-		width: 90%;
+		font-size: 35px;
+		width: 62%;
 		font-weight: 700;
 	}
 
