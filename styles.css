@@ -822,18 +822,18 @@ body {
 	transform: none;
 	background: #7fa97a;
 	border-radius: 999px;
-	width: 56px;
-	padding: 11px 0;
+	width: 42px;
+	padding: 5px 0;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 8px;
+	gap: 2px;
 	z-index: 79;
 }
 
 .hero-social a {
-	width: 42px;
-	height: 42px;
+	width: 34px;
+	height: 34px;
 	border-radius: 50%;
 	background: #fff;
 	display: inline-flex;
@@ -842,8 +842,8 @@ body {
 }
 
 .hero-social img {
-	width: 28px;
-	height: 28px;
+	width: 24px;
+	height: 24px;
 }
 
 .hero-social a.none {
@@ -858,8 +858,8 @@ body {
 }
 
 .hero-social a.none img {
-	width: 48px;
-	height: 48px;
+	width: 40px;
+	height: 40px;
 	object-fit: contain;
 
 }
