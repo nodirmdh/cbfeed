@@ -191,14 +191,37 @@
   setFooterLink("contact.html", t.common.footerContacts);
 
   const homeProductGrid = document.querySelector(".home-main .product-grid");
-  const homeProductNext = document.querySelector(".home-main .products-next");
-  if (homeProductGrid && homeProductNext) {
-    homeProductNext.addEventListener("click", () => {
+  const homeProductPrev = document.querySelector(".home-main .product-carousel-btn.prev");
+  const homeProductNext = document.querySelector(".home-main .product-carousel-btn.next");
+  if (homeProductGrid && (homeProductPrev || homeProductNext)) {
+    const getStep = () => homeProductGrid.clientWidth * 0.82;
+
+    const syncButtons = () => {
+      const maxScroll = homeProductGrid.scrollWidth - homeProductGrid.clientWidth;
+      const atStart = homeProductGrid.scrollLeft <= 1;
+      const atEnd = homeProductGrid.scrollLeft >= maxScroll - 1;
+
+      if (homeProductPrev) homeProductPrev.disabled = atStart;
+      if (homeProductNext) homeProductNext.disabled = atEnd;
+    };
+
+    homeProductPrev?.addEventListener("click", () => {
       homeProductGrid.scrollBy({
-        left: homeProductGrid.clientWidth * 0.8,
+        left: -getStep(),
         behavior: "smooth",
       });
     });
+
+    homeProductNext?.addEventListener("click", () => {
+      homeProductGrid.scrollBy({
+        left: getStep(),
+        behavior: "smooth",
+      });
+    });
+
+    homeProductGrid.addEventListener("scroll", syncButtons, { passive: true });
+    window.addEventListener("resize", syncButtons);
+    syncButtons();
   }
 
   const tabsBlock = document.querySelector(".tabs");
